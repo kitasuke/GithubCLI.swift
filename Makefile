@@ -36,8 +36,8 @@ install: package
 	sudo installer -pkg CommandlineTool.pkg -target /
 
 uninstall:
-	rm -rf "$(FRAMEWORKS_FOLDER)/CommandlineToolKit.framework"
-	rm -f "$(BINARIES_FOLDER)/commandlinetool"
+	sudo rm -rf "$(FRAMEWORKS_FOLDER)/CommandlineToolKit.framework"
+	sudo rm -f "$(BINARIES_FOLDER)/commandlinetool"
 
 installables: clean bootstrap
 	$(BUILD_TOOL) $(XCODEFLAGS) install

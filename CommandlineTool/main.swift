@@ -6,6 +6,14 @@
 //  Copyright (c) 2015 kitasuke. All rights reserved.
 //
 
-import Foundation
+import Commandant
 
-println("Hello World")
+let registry = CommandRegistry<CommandlineToolError>()
+registry.register(VersionCommand())
+
+let helpCommand = HelpCommand(registry: registry)
+registry.register(helpCommand)
+
+registry.main(defaultVerb: "help") { error in
+    fputs("\(error)\n", stderr)
+}
