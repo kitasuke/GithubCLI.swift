@@ -5,7 +5,7 @@
       location = "group:CommandlineTool.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Commandant/Commandant.xcodeproj">
+      location = "group:Carthage/Checkouts/Result/Carthage/Checkouts/Box/Box.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/Result/Result.xcodeproj">

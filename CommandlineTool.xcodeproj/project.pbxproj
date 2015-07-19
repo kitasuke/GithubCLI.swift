@@ -7,52 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC5B297F1B5B6A3D003848A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B297E1B5B6A3D003848A4 /* main.swift */; };
-		EC5B298A1B5B6A6E003848A4 /* CommandlineToolFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5B29891B5B6A6E003848A4 /* CommandlineToolFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC5B29901B5B6A6E003848A4 /* CommandlineToolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */; };
-		EC5B299C1B5B6A6E003848A4 /* CommandlineToolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */; };
-		EC5B299D1B5B6A6E003848A4 /* CommandlineToolFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC5B29A61B5B6DCD003848A4 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC5B29A51B5B6DCD003848A4 /* Components.plist */; };
-		EC5B29ED1B5B7B9D003848A4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC5B29DA1B5B7B9D003848A4 /* README.md */; };
-		EC5B29F81B5B7F85003848A4 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B29F71B5B7F85003848A4 /* Sample.swift */; };
-		EC5B29FA1B5B7FCB003848A4 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B29F91B5B7FCB003848A4 /* SampleTests.swift */; };
+		EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */; };
+		EC9945081B5BB91A0012D290 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945071B5BB91A0012D290 /* main.swift */; };
+		EC9945131B5BB9570012D290 /* CommandlineToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9945121B5BB9570012D290 /* CommandlineToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC9945191B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
+		EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */; };
+		EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
+		EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945321B5BBC110012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99452F1B5BBC110012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945331B5BBC110012D290 /* Box.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945301B5BBC110012D290 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945341B5BBC110012D290 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945311B5BBC110012D290 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945351B5BBC1D0012D290 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99452F1B5BBC110012D290 /* APIKit.framework */; };
+		EC9945361B5BBC1D0012D290 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945301B5BBC110012D290 /* Box.framework */; };
+		EC9945371B5BBC1D0012D290 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945311B5BBC110012D290 /* Result.framework */; };
+		EC9945511B5BBD3F0012D290 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453B1B5BBD3F0012D290 /* Common.xcconfig */; };
+		EC9945521B5BBD3F0012D290 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */; };
+		EC9945531B5BBD3F0012D290 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */; };
+		EC9945541B5BBD3F0012D290 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453F1B5BBD3F0012D290 /* Release.xcconfig */; };
+		EC9945551B5BBD3F0012D290 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945401B5BBD3F0012D290 /* Test.xcconfig */; };
+		EC9945561B5BBD3F0012D290 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945421B5BBD3F0012D290 /* Application.xcconfig */; };
+		EC9945571B5BBD3F0012D290 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945431B5BBD3F0012D290 /* Framework.xcconfig */; };
+		EC9945581B5BBD3F0012D290 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945441B5BBD3F0012D290 /* StaticLibrary.xcconfig */; };
+		EC9945591B5BBD3F0012D290 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945461B5BBD3F0012D290 /* iOS-Application.xcconfig */; };
+		EC99455A1B5BBD3F0012D290 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945471B5BBD3F0012D290 /* iOS-Base.xcconfig */; };
+		EC99455B1B5BBD3F0012D290 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945481B5BBD3F0012D290 /* iOS-Framework.xcconfig */; };
+		EC99455C1B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945491B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig */; };
+		EC99455D1B5BBD3F0012D290 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454B1B5BBD3F0012D290 /* Mac-Application.xcconfig */; };
+		EC99455E1B5BBD3F0012D290 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454C1B5BBD3F0012D290 /* Mac-Base.xcconfig */; };
+		EC99455F1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454D1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig */; };
+		EC9945601B5BBD3F0012D290 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */; };
+		EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */; };
+		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC5B29911B5B6A6E003848A4 /* PBXContainerItemProxy */ = {
+		EC9944F81B5BB8CA0012D290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC5B29561B5B6A24003848A4 /* Project object */;
+			containerPortal = EC9944DF1B5BB8CA0012D290 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC5B29841B5B6A6E003848A4;
-			remoteInfo = CommandlineToolFramework;
+			remoteGlobalIDString = EC9944E61B5BB8CA0012D290;
+			remoteInfo = CommandlineTool;
 		};
-		EC5B299A1B5B6A6E003848A4 /* PBXContainerItemProxy */ = {
+		EC99451A1B5BB9570012D290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC5B29561B5B6A24003848A4 /* Project object */;
+			containerPortal = EC9944DF1B5BB8CA0012D290 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC5B29841B5B6A6E003848A4;
-			remoteInfo = CommandlineToolFramework;
+			remoteGlobalIDString = EC99450D1B5BB9570012D290;
+			remoteInfo = CommandlineToolKit;
+		};
+		EC99451C1B5BB9570012D290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC9944DF1B5BB8CA0012D290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC9944E61B5BB8CA0012D290;
+			remoteInfo = CommandlineTool;
+		};
+		EC9945231B5BB9570012D290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC9944DF1B5BB8CA0012D290 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC99450D1B5BB9570012D290;
+			remoteInfo = CommandlineToolKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EC5B29A11B5B6A6E003848A4 /* Embed Frameworks */ = {
+		EC99452A1B5BB9570012D290 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EC5B299D1B5B6A6E003848A4 /* CommandlineToolFramework.framework in Embed Frameworks */,
+				EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B29EE1B5B7C61003848A4 /* Copy Frameworks */ = {
+		EC99452E1B5BBA830012D290 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EC9945321B5BBC110012D290 /* APIKit.framework in Copy Frameworks */,
+				EC9945331B5BBC110012D290 /* Box.framework in Copy Frameworks */,
+				EC9945341B5BBC110012D290 /* Result.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,304 +99,355 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EC5B295E1B5B6A24003848A4 /* CommandlineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandlineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5B29621B5B6A24003848A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC5B297E1B5B6A3D003848A4 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommandlineToolFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5B29881B5B6A6E003848A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC5B29891B5B6A6E003848A4 /* CommandlineToolFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandlineToolFramework.h; sourceTree = "<group>"; };
-		EC5B298F1B5B6A6E003848A4 /* CommandlineToolFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5B29971B5B6A6E003848A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC5B29A51B5B6DCD003848A4 /* Components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Components.plist; sourceTree = "<group>"; };
-		EC5B29C31B5B7B9D003848A4 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		EC5B29C51B5B7B9D003848A4 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		EC5B29C61B5B7B9D003848A4 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
-		EC5B29C71B5B7B9D003848A4 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		EC5B29C81B5B7B9D003848A4 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
-		EC5B29CA1B5B7B9D003848A4 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
-		EC5B29CB1B5B7B9D003848A4 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		EC5B29CC1B5B7B9D003848A4 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		EC5B29CE1B5B7B9D003848A4 /* Build */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Build; sourceTree = "<group>"; };
-		EC5B29D01B5B7B9D003848A4 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D11B5B7B9D003848A4 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D21B5B7B9D003848A4 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D31B5B7B9D003848A4 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D51B5B7B9D003848A4 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D61B5B7B9D003848A4 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D71B5B7B9D003848A4 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D81B5B7B9D003848A4 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
-		EC5B29D91B5B7B9D003848A4 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		EC5B29DA1B5B7B9D003848A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EC5B29F71B5B7F85003848A4 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		EC5B29F91B5B7FCB003848A4 /* SampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
+		EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandlineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CommandlineTool/Info.plist; sourceTree = "<group>"; };
+		EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9944FC1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolTests.swift; sourceTree = "<group>"; };
+		EC9945071B5BB91A0012D290 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommandlineToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9945111B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9945121B5BB9570012D290 /* CommandlineToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandlineToolKit.h; sourceTree = "<group>"; };
+		EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9945201B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolKitTests.swift; sourceTree = "<group>"; };
+		EC99452F1B5BBC110012D290 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/APIKit.framework"; sourceTree = "<group>"; };
+		EC9945301B5BBC110012D290 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Box.framework"; sourceTree = "<group>"; };
+		EC9945311B5BBC110012D290 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
+		EC99453B1B5BBD3F0012D290 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		EC99453F1B5BBD3F0012D290 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		EC9945401B5BBD3F0012D290 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		EC9945421B5BBD3F0012D290 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		EC9945431B5BBD3F0012D290 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		EC9945441B5BBD3F0012D290 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		EC9945461B5BBD3F0012D290 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		EC9945471B5BBD3F0012D290 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		EC9945481B5BBD3F0012D290 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		EC9945491B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		EC99454B1B5BBD3F0012D290 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		EC99454C1B5BBD3F0012D290 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		EC99454D1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		EC9945501B5BBD3F0012D290 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Carthage/Checkouts/xcconfigs/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC5B295B1B5B6A24003848A4 /* Frameworks */ = {
+		EC9944E41B5BB8CA0012D290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B299C1B5B6A6E003848A4 /* CommandlineToolFramework.framework in Frameworks */,
+				EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B29811B5B6A6E003848A4 /* Frameworks */ = {
+		EC9944F41B5BB8CA0012D290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B298C1B5B6A6E003848A4 /* Frameworks */ = {
+		EC99450A1B5BB9570012D290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B29901B5B6A6E003848A4 /* CommandlineToolFramework.framework in Frameworks */,
+				EC9945351B5BBC1D0012D290 /* APIKit.framework in Frameworks */,
+				EC9945361B5BBC1D0012D290 /* Box.framework in Frameworks */,
+				EC9945371B5BBC1D0012D290 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9945151B5BB9570012D290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9945191B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC5B29551B5B6A24003848A4 = {
+		EC9944DE1B5BB8CA0012D290 = {
 			isa = PBXGroup;
 			children = (
-				EC5B29601B5B6A24003848A4 /* CommandlineTool */,
-				EC5B29861B5B6A6E003848A4 /* CommandlineToolFramework */,
-				EC5B29951B5B6A6E003848A4 /* CommandlineToolFrameworkTests */,
-				EC5B295F1B5B6A24003848A4 /* Products */,
+				EC9945391B5BBD200012D290 /* Configuration */,
+				EC9944E91B5BB8CA0012D290 /* CommandlineTool */,
+				EC9944FA1B5BB8CA0012D290 /* CommandlineToolTests */,
+				EC99450F1B5BB9570012D290 /* CommandlineToolKit */,
+				EC99451E1B5BB9570012D290 /* CommandlineToolKitTests */,
+				EC9944E81B5BB8CA0012D290 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EC5B295F1B5B6A24003848A4 /* Products */ = {
+		EC9944E81B5BB8CA0012D290 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B295E1B5B6A24003848A4 /* CommandlineTool.app */,
-				EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */,
-				EC5B298F1B5B6A6E003848A4 /* CommandlineToolFrameworkTests.xctest */,
+				EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */,
+				EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */,
+				EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */,
+				EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC5B29601B5B6A24003848A4 /* CommandlineTool */ = {
+		EC9944E91B5BB8CA0012D290 /* CommandlineTool */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29611B5B6A24003848A4 /* Supporting Files */,
-				EC5B297E1B5B6A3D003848A4 /* main.swift */,
+				EC9945071B5BB91A0012D290 /* main.swift */,
+				EC9944EA1B5BB8CA0012D290 /* Supporting Files */,
 			);
 			path = CommandlineTool;
 			sourceTree = "<group>";
 		};
-		EC5B29611B5B6A24003848A4 /* Supporting Files */ = {
+		EC9944EA1B5BB8CA0012D290 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29A51B5B6DCD003848A4 /* Components.plist */,
-				EC5B29621B5B6A24003848A4 /* Info.plist */,
+				EC9944EB1B5BB8CA0012D290 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC5B29861B5B6A6E003848A4 /* CommandlineToolFramework */ = {
+		EC9944FA1B5BB8CA0012D290 /* CommandlineToolTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29891B5B6A6E003848A4 /* CommandlineToolFramework.h */,
-				EC5B29F71B5B7F85003848A4 /* Sample.swift */,
-				EC5B29871B5B6A6E003848A4 /* Supporting Files */,
+				EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */,
+				EC9944FB1B5BB8CA0012D290 /* Supporting Files */,
 			);
-			path = CommandlineToolFramework;
+			path = CommandlineToolTests;
 			sourceTree = "<group>";
 		};
-		EC5B29871B5B6A6E003848A4 /* Supporting Files */ = {
+		EC9944FB1B5BB8CA0012D290 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29881B5B6A6E003848A4 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EC5B29951B5B6A6E003848A4 /* CommandlineToolFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC5B29F91B5B7FCB003848A4 /* SampleTests.swift */,
-				EC5B29C11B5B7B66003848A4 /* Configuration */,
-				EC5B29961B5B6A6E003848A4 /* Supporting Files */,
-			);
-			path = CommandlineToolFrameworkTests;
-			sourceTree = "<group>";
-		};
-		EC5B29961B5B6A6E003848A4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EC5B29971B5B6A6E003848A4 /* Info.plist */,
+				EC9944FC1B5BB8CA0012D290 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC5B29C11B5B7B66003848A4 /* Configuration */ = {
+		EC99450F1B5BB9570012D290 /* CommandlineToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29C21B5B7B9D003848A4 /* Base */,
-				EC5B29CD1B5B7B9D003848A4 /* Carthage */,
-				EC5B29CF1B5B7B9D003848A4 /* iOS */,
-				EC5B29D41B5B7B9D003848A4 /* Mac OS X */,
-				EC5B29DA1B5B7B9D003848A4 /* README.md */,
+				EC9945121B5BB9570012D290 /* CommandlineToolKit.h */,
+				EC9945101B5BB9570012D290 /* Supporting Files */,
+			);
+			path = CommandlineToolKit;
+			sourceTree = "<group>";
+		};
+		EC9945101B5BB9570012D290 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC9945111B5BB9570012D290 /* Info.plist */,
+				EC99452F1B5BBC110012D290 /* APIKit.framework */,
+				EC9945301B5BBC110012D290 /* Box.framework */,
+				EC9945311B5BBC110012D290 /* Result.framework */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC99451E1B5BB9570012D290 /* CommandlineToolKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */,
+				EC99451F1B5BB9570012D290 /* Supporting Files */,
+			);
+			path = CommandlineToolKitTests;
+			sourceTree = "<group>";
+		};
+		EC99451F1B5BB9570012D290 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC9945201B5BB9570012D290 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC9945391B5BBD200012D290 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EC99453A1B5BBD3F0012D290 /* Base */,
+				EC9945451B5BBD3F0012D290 /* iOS */,
+				EC99454A1B5BBD3F0012D290 /* Mac OS X */,
+				EC9945501B5BBD3F0012D290 /* README.md */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		EC5B29C21B5B7B9D003848A4 /* Base */ = {
+		EC99453A1B5BBD3F0012D290 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29C31B5B7B9D003848A4 /* Common.xcconfig */,
-				EC5B29C41B5B7B9D003848A4 /* Configurations */,
-				EC5B29C91B5B7B9D003848A4 /* Targets */,
+				EC99453B1B5BBD3F0012D290 /* Common.xcconfig */,
+				EC99453C1B5BBD3F0012D290 /* Configurations */,
+				EC9945411B5BBD3F0012D290 /* Targets */,
 			);
-			path = Base;
+			name = Base;
+			path = Carthage/Checkouts/xcconfigs/Base;
 			sourceTree = "<group>";
 		};
-		EC5B29C41B5B7B9D003848A4 /* Configurations */ = {
+		EC99453C1B5BBD3F0012D290 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29C51B5B7B9D003848A4 /* Debug.xcconfig */,
-				EC5B29C61B5B7B9D003848A4 /* Profile.xcconfig */,
-				EC5B29C71B5B7B9D003848A4 /* Release.xcconfig */,
-				EC5B29C81B5B7B9D003848A4 /* Test.xcconfig */,
+				EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */,
+				EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */,
+				EC99453F1B5BBD3F0012D290 /* Release.xcconfig */,
+				EC9945401B5BBD3F0012D290 /* Test.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		EC5B29C91B5B7B9D003848A4 /* Targets */ = {
+		EC9945411B5BBD3F0012D290 /* Targets */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29CA1B5B7B9D003848A4 /* Application.xcconfig */,
-				EC5B29CB1B5B7B9D003848A4 /* Framework.xcconfig */,
-				EC5B29CC1B5B7B9D003848A4 /* StaticLibrary.xcconfig */,
+				EC9945421B5BBD3F0012D290 /* Application.xcconfig */,
+				EC9945431B5BBD3F0012D290 /* Framework.xcconfig */,
+				EC9945441B5BBD3F0012D290 /* StaticLibrary.xcconfig */,
 			);
 			path = Targets;
 			sourceTree = "<group>";
 		};
-		EC5B29CD1B5B7B9D003848A4 /* Carthage */ = {
+		EC9945451B5BBD3F0012D290 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29CE1B5B7B9D003848A4 /* Build */,
+				EC9945461B5BBD3F0012D290 /* iOS-Application.xcconfig */,
+				EC9945471B5BBD3F0012D290 /* iOS-Base.xcconfig */,
+				EC9945481B5BBD3F0012D290 /* iOS-Framework.xcconfig */,
+				EC9945491B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig */,
 			);
-			path = Carthage;
+			name = iOS;
+			path = Carthage/Checkouts/xcconfigs/iOS;
 			sourceTree = "<group>";
 		};
-		EC5B29CF1B5B7B9D003848A4 /* iOS */ = {
+		EC99454A1B5BBD3F0012D290 /* Mac OS X */ = {
 			isa = PBXGroup;
 			children = (
-				EC5B29D01B5B7B9D003848A4 /* iOS-Application.xcconfig */,
-				EC5B29D11B5B7B9D003848A4 /* iOS-Base.xcconfig */,
-				EC5B29D21B5B7B9D003848A4 /* iOS-Framework.xcconfig */,
-				EC5B29D31B5B7B9D003848A4 /* iOS-StaticLibrary.xcconfig */,
+				EC99454B1B5BBD3F0012D290 /* Mac-Application.xcconfig */,
+				EC99454C1B5BBD3F0012D290 /* Mac-Base.xcconfig */,
+				EC99454D1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig */,
+				EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */,
+				EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */,
 			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		EC5B29D41B5B7B9D003848A4 /* Mac OS X */ = {
-			isa = PBXGroup;
-			children = (
-				EC5B29D51B5B7B9D003848A4 /* Mac-Application.xcconfig */,
-				EC5B29D61B5B7B9D003848A4 /* Mac-Base.xcconfig */,
-				EC5B29D71B5B7B9D003848A4 /* Mac-DynamicLibrary.xcconfig */,
-				EC5B29D81B5B7B9D003848A4 /* Mac-Framework.xcconfig */,
-				EC5B29D91B5B7B9D003848A4 /* Mac-StaticLibrary.xcconfig */,
-			);
-			path = "Mac OS X";
+			name = "Mac OS X";
+			path = "Carthage/Checkouts/xcconfigs/Mac OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EC5B29821B5B6A6E003848A4 /* Headers */ = {
+		EC99450B1B5BB9570012D290 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B298A1B5B6A6E003848A4 /* CommandlineToolFramework.h in Headers */,
+				EC9945131B5BB9570012D290 /* CommandlineToolKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EC5B295D1B5B6A24003848A4 /* CommandlineTool */ = {
+		EC9944E61B5BB8CA0012D290 /* CommandlineTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC5B29781B5B6A24003848A4 /* Build configuration list for PBXNativeTarget "CommandlineTool" */;
+			buildConfigurationList = EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineTool" */;
 			buildPhases = (
-				EC5B295A1B5B6A24003848A4 /* Sources */,
-				EC5B295B1B5B6A24003848A4 /* Frameworks */,
-				EC5B295C1B5B6A24003848A4 /* Resources */,
-				EC5B29A11B5B6A6E003848A4 /* Embed Frameworks */,
+				EC9944E31B5BB8CA0012D290 /* Sources */,
+				EC9944E41B5BB8CA0012D290 /* Frameworks */,
+				EC9944E51B5BB8CA0012D290 /* Resources */,
+				EC99452A1B5BB9570012D290 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC5B299B1B5B6A6E003848A4 /* PBXTargetDependency */,
+				EC9945241B5BB9570012D290 /* PBXTargetDependency */,
 			);
 			name = CommandlineTool;
 			productName = CommandlineTool;
-			productReference = EC5B295E1B5B6A24003848A4 /* CommandlineTool.app */;
+			productReference = EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC5B29841B5B6A6E003848A4 /* CommandlineToolFramework */ = {
+		EC9944F61B5BB8CA0012D290 /* CommandlineToolTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC5B299E1B5B6A6E003848A4 /* Build configuration list for PBXNativeTarget "CommandlineToolFramework" */;
+			buildConfigurationList = EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolTests" */;
 			buildPhases = (
-				EC5B29801B5B6A6E003848A4 /* Sources */,
-				EC5B29811B5B6A6E003848A4 /* Frameworks */,
-				EC5B29821B5B6A6E003848A4 /* Headers */,
-				EC5B29EE1B5B7C61003848A4 /* Copy Frameworks */,
+				EC9944F31B5BB8CA0012D290 /* Sources */,
+				EC9944F41B5BB8CA0012D290 /* Frameworks */,
+				EC9944F51B5BB8CA0012D290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC9944F91B5BB8CA0012D290 /* PBXTargetDependency */,
+			);
+			name = CommandlineToolTests;
+			productName = CommandlineToolTests;
+			productReference = EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC99450D1B5BB9570012D290 /* CommandlineToolKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKit" */;
+			buildPhases = (
+				EC9945091B5BB9570012D290 /* Sources */,
+				EC99450A1B5BB9570012D290 /* Frameworks */,
+				EC99450B1B5BB9570012D290 /* Headers */,
+				EC99450C1B5BB9570012D290 /* Resources */,
+				EC99452E1B5BBA830012D290 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CommandlineToolFramework;
-			productName = CommandlineToolFramework;
-			productReference = EC5B29851B5B6A6E003848A4 /* CommandlineToolFramework.framework */;
+			name = CommandlineToolKit;
+			productName = CommandlineToolKit;
+			productReference = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EC5B298E1B5B6A6E003848A4 /* CommandlineToolFrameworkTests */ = {
+		EC9945171B5BB9570012D290 /* CommandlineToolKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC5B29A21B5B6A6E003848A4 /* Build configuration list for PBXNativeTarget "CommandlineToolFrameworkTests" */;
+			buildConfigurationList = EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKitTests" */;
 			buildPhases = (
-				EC5B298B1B5B6A6E003848A4 /* Sources */,
-				EC5B298C1B5B6A6E003848A4 /* Frameworks */,
+				EC9945141B5BB9570012D290 /* Sources */,
+				EC9945151B5BB9570012D290 /* Frameworks */,
+				EC9945161B5BB9570012D290 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC5B29921B5B6A6E003848A4 /* PBXTargetDependency */,
+				EC99451B1B5BB9570012D290 /* PBXTargetDependency */,
+				EC99451D1B5BB9570012D290 /* PBXTargetDependency */,
 			);
-			name = CommandlineToolFrameworkTests;
-			productName = CommandlineToolFrameworkTests;
-			productReference = EC5B298F1B5B6A6E003848A4 /* CommandlineToolFrameworkTests.xctest */;
+			name = CommandlineToolKitTests;
+			productName = CommandlineToolKitTests;
+			productReference = EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EC5B29561B5B6A24003848A4 /* Project object */ = {
+		EC9944DF1B5BB8CA0012D290 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = kitasuke;
 				TargetAttributes = {
-					EC5B295D1B5B6A24003848A4 = {
+					EC9944E61B5BB8CA0012D290 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					EC5B29841B5B6A6E003848A4 = {
+					EC9944F61B5BB8CA0012D290 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EC9944E61B5BB8CA0012D290;
+					};
+					EC99450D1B5BB9570012D290 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					EC5B298E1B5B6A6E003848A4 = {
+					EC9945171B5BB9570012D290 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = EC5B295D1B5B6A24003848A4;
+						TestTargetID = EC9944E61B5BB8CA0012D290;
 					};
 				};
 			};
-			buildConfigurationList = EC5B29591B5B6A24003848A4 /* Build configuration list for PBXProject "CommandlineTool" */;
+			buildConfigurationList = EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "CommandlineTool" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -365,72 +455,127 @@
 				en,
 				Base,
 			);
-			mainGroup = EC5B29551B5B6A24003848A4;
-			productRefGroup = EC5B295F1B5B6A24003848A4 /* Products */;
+			mainGroup = EC9944DE1B5BB8CA0012D290;
+			productRefGroup = EC9944E81B5BB8CA0012D290 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC5B295D1B5B6A24003848A4 /* CommandlineTool */,
-				EC5B29841B5B6A6E003848A4 /* CommandlineToolFramework */,
-				EC5B298E1B5B6A6E003848A4 /* CommandlineToolFrameworkTests */,
+				EC9944E61B5BB8CA0012D290 /* CommandlineTool */,
+				EC9944F61B5BB8CA0012D290 /* CommandlineToolTests */,
+				EC99450D1B5BB9570012D290 /* CommandlineToolKit */,
+				EC9945171B5BB9570012D290 /* CommandlineToolKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC5B295C1B5B6A24003848A4 /* Resources */ = {
+		EC9944E51B5BB8CA0012D290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B29A61B5B6DCD003848A4 /* Components.plist in Resources */,
+				EC9945541B5BBD3F0012D290 /* Release.xcconfig in Resources */,
+				EC9945601B5BBD3F0012D290 /* Mac-Framework.xcconfig in Resources */,
+				EC9945531B5BBD3F0012D290 /* Profile.xcconfig in Resources */,
+				EC99455C1B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig in Resources */,
+				EC9945581B5BBD3F0012D290 /* StaticLibrary.xcconfig in Resources */,
+				EC99455A1B5BBD3F0012D290 /* iOS-Base.xcconfig in Resources */,
+				EC9945521B5BBD3F0012D290 /* Debug.xcconfig in Resources */,
+				EC9945511B5BBD3F0012D290 /* Common.xcconfig in Resources */,
+				EC9945571B5BBD3F0012D290 /* Framework.xcconfig in Resources */,
+				EC99455D1B5BBD3F0012D290 /* Mac-Application.xcconfig in Resources */,
+				EC99455E1B5BBD3F0012D290 /* Mac-Base.xcconfig in Resources */,
+				EC9945551B5BBD3F0012D290 /* Test.xcconfig in Resources */,
+				EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */,
+				EC9945561B5BBD3F0012D290 /* Application.xcconfig in Resources */,
+				EC99455F1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig in Resources */,
+				EC99455B1B5BBD3F0012D290 /* iOS-Framework.xcconfig in Resources */,
+				EC9945591B5BBD3F0012D290 /* iOS-Application.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9944F51B5BB8CA0012D290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC99450C1B5BB9570012D290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9945161B5BB9570012D290 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC5B295A1B5B6A24003848A4 /* Sources */ = {
+		EC9944E31B5BB8CA0012D290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B297F1B5B6A3D003848A4 /* main.swift in Sources */,
+				EC9945621B5BBD3F0012D290 /* README.md in Sources */,
+				EC9945081B5BB91A0012D290 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B29801B5B6A6E003848A4 /* Sources */ = {
+		EC9944F31B5BB8CA0012D290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B29F81B5B7F85003848A4 /* Sample.swift in Sources */,
+				EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B298B1B5B6A6E003848A4 /* Sources */ = {
+		EC9945091B5BB9570012D290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5B29ED1B5B7B9D003848A4 /* README.md in Sources */,
-				EC5B29FA1B5B7FCB003848A4 /* SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9945141B5BB9570012D290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC5B29921B5B6A6E003848A4 /* PBXTargetDependency */ = {
+		EC9944F91B5BB8CA0012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC5B29841B5B6A6E003848A4 /* CommandlineToolFramework */;
-			targetProxy = EC5B29911B5B6A6E003848A4 /* PBXContainerItemProxy */;
+			target = EC9944E61B5BB8CA0012D290 /* CommandlineTool */;
+			targetProxy = EC9944F81B5BB8CA0012D290 /* PBXContainerItemProxy */;
 		};
-		EC5B299B1B5B6A6E003848A4 /* PBXTargetDependency */ = {
+		EC99451B1B5BB9570012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC5B29841B5B6A6E003848A4 /* CommandlineToolFramework */;
-			targetProxy = EC5B299A1B5B6A6E003848A4 /* PBXContainerItemProxy */;
+			target = EC99450D1B5BB9570012D290 /* CommandlineToolKit */;
+			targetProxy = EC99451A1B5BB9570012D290 /* PBXContainerItemProxy */;
+		};
+		EC99451D1B5BB9570012D290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC9944E61B5BB8CA0012D290 /* CommandlineTool */;
+			targetProxy = EC99451C1B5BB9570012D290 /* PBXContainerItemProxy */;
+		};
+		EC9945241B5BB9570012D290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC99450D1B5BB9570012D290 /* CommandlineToolKit */;
+			targetProxy = EC9945231B5BB9570012D290 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		EC5B29761B5B6A24003848A4 /* Debug */ = {
+		EC9944FF1B5BB8CA0012D290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -474,7 +619,7 @@
 			};
 			name = Debug;
 		};
-		EC5B29771B5B6A24003848A4 /* Release */ = {
+		EC9945001B5BB8CA0012D290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -510,37 +655,71 @@
 			};
 			name = Release;
 		};
-		EC5B29791B5B6A24003848A4 /* Debug */ = {
+		EC9945021B5BB8CA0012D290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CommandlineTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/CommandlineToolKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/CommandlineToolKit.framework/Versions/Current/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
-		EC5B297A1B5B6A24003848A4 /* Release */ = {
+		EC9945031B5BB8CA0012D290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CommandlineTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/CommandlineToolKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/CommandlineToolKit.framework/Versions/Current/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
-		EC5B299F1B5B6A6E003848A4 /* Debug */ = {
+		EC9945051B5BB8CA0012D290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+			};
+			name = Debug;
+		};
+		EC9945061B5BB8CA0012D290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+			};
+			name = Release;
+		};
+		EC9945281B5BB9570012D290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -549,30 +728,28 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-ckdizgvodzmstffyomdgxjlllths/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolFramework/Info.plist;
+				INFOPLIST_FILE = CommandlineToolKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		EC5B29A01B5B6A6E003848A4 /* Release */ = {
+		EC9945291B5BB9570012D290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -581,22 +758,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-ckdizgvodzmstffyomdgxjlllths/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CommandlineToolFramework/Info.plist;
+				INFOPLIST_FILE = CommandlineToolKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		EC5B29A31B5B6A6E003848A4 /* Debug */ = {
+		EC99452C1B5BB9570012D290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -608,15 +784,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolFrameworkTests/Info.plist;
+				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
-		EC5B29A41B5B6A6E003848A4 /* Release */ = {
+		EC99452D1B5BB9570012D290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -624,54 +799,62 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolFrameworkTests/Info.plist;
+				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC5B29591B5B6A24003848A4 /* Build configuration list for PBXProject "CommandlineTool" */ = {
+		EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "CommandlineTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC5B29761B5B6A24003848A4 /* Debug */,
-				EC5B29771B5B6A24003848A4 /* Release */,
+				EC9944FF1B5BB8CA0012D290 /* Debug */,
+				EC9945001B5BB8CA0012D290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC5B29781B5B6A24003848A4 /* Build configuration list for PBXNativeTarget "CommandlineTool" */ = {
+		EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC5B29791B5B6A24003848A4 /* Debug */,
-				EC5B297A1B5B6A24003848A4 /* Release */,
+				EC9945021B5BB8CA0012D290 /* Debug */,
+				EC9945031B5BB8CA0012D290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC5B299E1B5B6A6E003848A4 /* Build configuration list for PBXNativeTarget "CommandlineToolFramework" */ = {
+		EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC5B299F1B5B6A6E003848A4 /* Debug */,
-				EC5B29A01B5B6A6E003848A4 /* Release */,
+				EC9945051B5BB8CA0012D290 /* Debug */,
+				EC9945061B5BB8CA0012D290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC5B29A21B5B6A6E003848A4 /* Build configuration list for PBXNativeTarget "CommandlineToolFrameworkTests" */ = {
+		EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC5B29A31B5B6A6E003848A4 /* Debug */,
-				EC5B29A41B5B6A6E003848A4 /* Release */,
+				EC9945281B5BB9570012D290 /* Debug */,
+				EC9945291B5BB9570012D290 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC99452C1B5BB9570012D290 /* Debug */,
+				EC99452D1B5BB9570012D290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EC5B29561B5B6A24003848A4 /* Project object */;
+	rootObject = EC9944DF1B5BB8CA0012D290 /* Project object */;
 }
