@@ -14,12 +14,6 @@
 		EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */; };
 		EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
 		EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945321B5BBC110012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99452F1B5BBC110012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945331B5BBC110012D290 /* Box.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945301B5BBC110012D290 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945341B5BBC110012D290 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945311B5BBC110012D290 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945351B5BBC1D0012D290 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99452F1B5BBC110012D290 /* APIKit.framework */; };
-		EC9945361B5BBC1D0012D290 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945301B5BBC110012D290 /* Box.framework */; };
-		EC9945371B5BBC1D0012D290 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945311B5BBC110012D290 /* Result.framework */; };
 		EC9945511B5BBD3F0012D290 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453B1B5BBD3F0012D290 /* Common.xcconfig */; };
 		EC9945521B5BBD3F0012D290 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */; };
 		EC9945531B5BBD3F0012D290 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */; };
@@ -38,6 +32,15 @@
 		EC9945601B5BBD3F0012D290 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */; };
 		EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */; };
 		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
+		EC9945641B5BBEF70012D290 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9945631B5BBEF70012D290 /* Components.plist */; };
+		EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC99456F1B5BC97D0012D290 /* Box.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456C1B5BC97D0012D290 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945701B5BC97D0012D290 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456D1B5BC97D0012D290 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945711B5BC9890012D290 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; };
+		EC9945721B5BC9890012D290 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456C1B5BC97D0012D290 /* Box.framework */; };
+		EC9945731B5BC9890012D290 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456D1B5BC97D0012D290 /* Result.framework */; };
+		EC99457A1B5BCAC30012D290 /* Commandant.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945791B5BCAC30012D290 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC99457C1B5BCACF0012D290 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945791B5BCAC30012D290 /* Commandant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,9 +92,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EC9945321B5BBC110012D290 /* APIKit.framework in Copy Frameworks */,
-				EC9945331B5BBC110012D290 /* Box.framework in Copy Frameworks */,
-				EC9945341B5BBC110012D290 /* Result.framework in Copy Frameworks */,
+				EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */,
+				EC99456F1B5BC97D0012D290 /* Box.framework in Copy Frameworks */,
+				EC9945701B5BC97D0012D290 /* Result.framework in Copy Frameworks */,
+				EC99457A1B5BCAC30012D290 /* Commandant.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +104,7 @@
 
 /* Begin PBXFileReference section */
 		EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandlineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CommandlineTool/Info.plist; sourceTree = "<group>"; };
+		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9944FC1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolTests.swift; sourceTree = "<group>"; };
@@ -111,9 +115,6 @@
 		EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9945201B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolKitTests.swift; sourceTree = "<group>"; };
-		EC99452F1B5BBC110012D290 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/APIKit.framework"; sourceTree = "<group>"; };
-		EC9945301B5BBC110012D290 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Box.framework"; sourceTree = "<group>"; };
-		EC9945311B5BBC110012D290 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
 		EC99453B1B5BBD3F0012D290 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -132,6 +133,11 @@
 		EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		EC9945501B5BBD3F0012D290 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Carthage/Checkouts/xcconfigs/README.md; sourceTree = "<group>"; };
+		EC9945631B5BBEF70012D290 /* Components.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Components.plist; sourceTree = "<group>"; };
+		EC99456B1B5BC97D0012D290 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/APIKit.framework"; sourceTree = "<group>"; };
+		EC99456C1B5BC97D0012D290 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Box.framework"; sourceTree = "<group>"; };
+		EC99456D1B5BC97D0012D290 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
+		EC9945791B5BCAC30012D290 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = "../../../Library/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug/Commandant.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +160,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945351B5BBC1D0012D290 /* APIKit.framework in Frameworks */,
-				EC9945361B5BBC1D0012D290 /* Box.framework in Frameworks */,
-				EC9945371B5BBC1D0012D290 /* Result.framework in Frameworks */,
+				EC99457C1B5BCACF0012D290 /* Commandant.framework in Frameworks */,
+				EC9945711B5BC9890012D290 /* APIKit.framework in Frameworks */,
+				EC9945721B5BC9890012D290 /* Box.framework in Frameworks */,
+				EC9945731B5BC9890012D290 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +213,7 @@
 		EC9944EA1B5BB8CA0012D290 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC9945631B5BBEF70012D290 /* Components.plist */,
 				EC9944EB1B5BB8CA0012D290 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -240,10 +248,11 @@
 		EC9945101B5BB9570012D290 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC9945791B5BCAC30012D290 /* Commandant.framework */,
+				EC99456B1B5BC97D0012D290 /* APIKit.framework */,
+				EC99456C1B5BC97D0012D290 /* Box.framework */,
+				EC99456D1B5BC97D0012D290 /* Result.framework */,
 				EC9945111B5BB9570012D290 /* Info.plist */,
-				EC99452F1B5BBC110012D290 /* APIKit.framework */,
-				EC9945301B5BBC110012D290 /* Box.framework */,
-				EC9945311B5BBC110012D290 /* Result.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -485,6 +494,7 @@
 				EC99455D1B5BBD3F0012D290 /* Mac-Application.xcconfig in Resources */,
 				EC99455E1B5BBD3F0012D290 /* Mac-Base.xcconfig in Resources */,
 				EC9945551B5BBD3F0012D290 /* Test.xcconfig in Resources */,
+				EC9945641B5BBEF70012D290 /* Components.plist in Resources */,
 				EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */,
 				EC9945561B5BBD3F0012D290 /* Application.xcconfig in Resources */,
 				EC99455F1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig in Resources */,
