@@ -1,6 +1,6 @@
 //
-//  CommandlineToolTests.swift
-//  CommandlineToolTests
+//  CommandlineToolFrameworkTests.swift
+//  CommandlineToolFrameworkTests
 //
 //  Created by Yusuke Kita on 7/19/15.
 //  Copyright (c) 2015 kitasuke. All rights reserved.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class CommandlineToolTests: XCTestCase {
+class CommandlineToolFrameworkTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
