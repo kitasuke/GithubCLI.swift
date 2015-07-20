@@ -16,10 +16,13 @@ OUTPUT_PACKAGE=CommandlineTool.pkg
 VERSION_STRING=$(shell agvtool what-marketing-version -terse1)
 COMPONENTS_PLIST=CommandlineTool/Components.plist
 
-.PHONY: all bootstrap clean install package test uninstall
+.PHONY: all bootstrap clean install package test uninstall delete carthage
 
 all: bootstrap
-	$(BUILD_TOOL) $(XCODEFLAGS) build
+	$(BUILD_TOOL) $(XCODEFLAGS) build -verbose
+
+carthage:
+	carthage update
 
 bootstrap:
 	script/bootstrap
@@ -32,10 +35,13 @@ clean:
 	rm -rf "$(TEMPORARY_FOLDER)"
 	$(BUILD_TOOL) $(XCODEFLAGS) clean
 
+delete:
+	rm -rf ~/Library/Developer/Xcode/DerivedData
+
 install: package
 	sudo installer -pkg CommandlineTool.pkg -target /
 
-uninstall:
+uninstall: delete
 	sudo rm -rf "$(FRAMEWORKS_FOLDER)/CommandlineToolKit.framework"
 	sudo rm -f "$(BINARIES_FOLDER)/commandlinetool"
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC46826D1B5CBF3200C9CC12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46826C1B5CBF3200C9CC12 /* Repository.swift */; };
+		EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC70DCC91B5CB04000BC0BF1 /* User.swift */; };
 		EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */; };
 		EC9945081B5BB91A0012D290 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945071B5BB91A0012D290 /* main.swift */; };
 		EC9945131B5BB9570012D290 /* CommandlineToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9945121B5BB9570012D290 /* CommandlineToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,23 +16,6 @@
 		EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */; };
 		EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
 		EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945511B5BBD3F0012D290 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453B1B5BBD3F0012D290 /* Common.xcconfig */; };
-		EC9945521B5BBD3F0012D290 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */; };
-		EC9945531B5BBD3F0012D290 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */; };
-		EC9945541B5BBD3F0012D290 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99453F1B5BBD3F0012D290 /* Release.xcconfig */; };
-		EC9945551B5BBD3F0012D290 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945401B5BBD3F0012D290 /* Test.xcconfig */; };
-		EC9945561B5BBD3F0012D290 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945421B5BBD3F0012D290 /* Application.xcconfig */; };
-		EC9945571B5BBD3F0012D290 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945431B5BBD3F0012D290 /* Framework.xcconfig */; };
-		EC9945581B5BBD3F0012D290 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945441B5BBD3F0012D290 /* StaticLibrary.xcconfig */; };
-		EC9945591B5BBD3F0012D290 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945461B5BBD3F0012D290 /* iOS-Application.xcconfig */; };
-		EC99455A1B5BBD3F0012D290 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945471B5BBD3F0012D290 /* iOS-Base.xcconfig */; };
-		EC99455B1B5BBD3F0012D290 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945481B5BBD3F0012D290 /* iOS-Framework.xcconfig */; };
-		EC99455C1B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC9945491B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig */; };
-		EC99455D1B5BBD3F0012D290 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454B1B5BBD3F0012D290 /* Mac-Application.xcconfig */; };
-		EC99455E1B5BBD3F0012D290 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454C1B5BBD3F0012D290 /* Mac-Base.xcconfig */; };
-		EC99455F1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454D1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig */; };
-		EC9945601B5BBD3F0012D290 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454E1B5BBD3F0012D290 /* Mac-Framework.xcconfig */; };
-		EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EC99454F1B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig */; };
 		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
 		EC9945641B5BBEF70012D290 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9945631B5BBEF70012D290 /* Components.plist */; };
 		EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,6 +29,7 @@
 		ECC3072F1B5BE9280020292D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3072D1B5BE9280020292D /* Version.swift */; };
 		ECC307301B5BE9280020292D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3072E1B5BE9280020292D /* Errors.swift */; };
 		ECC307321B5BEA520020292D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC307311B5BEA520020292D /* APIClient.swift */; };
+		ECE45E0A1B5C6CF200965A70 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE45E091B5C6CF200965A70 /* Github.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EC46826C1B5CBF3200C9CC12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EC70DCC91B5CB04000BC0BF1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandlineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +132,7 @@
 		ECC3072D1B5BE9280020292D /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		ECC3072E1B5BE9280020292D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		ECC307311B5BEA520020292D /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ECE45E091B5C6CF200965A70 /* Github.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +201,8 @@
 			children = (
 				EC9945071B5BB91A0012D290 /* main.swift */,
 				ECC3072D1B5BE9280020292D /* Version.swift */,
+				EC70DCC91B5CB04000BC0BF1 /* User.swift */,
+				EC46826C1B5CBF3200C9CC12 /* Repository.swift */,
 				ECC3072E1B5BE9280020292D /* Errors.swift */,
 				EC9944EA1B5BB8CA0012D290 /* Supporting Files */,
 			);
@@ -249,6 +240,7 @@
 			children = (
 				EC9945121B5BB9570012D290 /* CommandlineToolKit.h */,
 				ECC307311B5BEA520020292D /* APIClient.swift */,
+				ECE45E091B5C6CF200965A70 /* Github.swift */,
 				EC9945101B5BB9570012D290 /* Supporting Files */,
 			);
 			path = CommandlineToolKit;
@@ -491,24 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945541B5BBD3F0012D290 /* Release.xcconfig in Resources */,
-				EC9945601B5BBD3F0012D290 /* Mac-Framework.xcconfig in Resources */,
-				EC9945531B5BBD3F0012D290 /* Profile.xcconfig in Resources */,
-				EC99455C1B5BBD3F0012D290 /* iOS-StaticLibrary.xcconfig in Resources */,
-				EC9945581B5BBD3F0012D290 /* StaticLibrary.xcconfig in Resources */,
-				EC99455A1B5BBD3F0012D290 /* iOS-Base.xcconfig in Resources */,
-				EC9945521B5BBD3F0012D290 /* Debug.xcconfig in Resources */,
-				EC9945511B5BBD3F0012D290 /* Common.xcconfig in Resources */,
-				EC9945571B5BBD3F0012D290 /* Framework.xcconfig in Resources */,
-				EC99455D1B5BBD3F0012D290 /* Mac-Application.xcconfig in Resources */,
-				EC99455E1B5BBD3F0012D290 /* Mac-Base.xcconfig in Resources */,
-				EC9945551B5BBD3F0012D290 /* Test.xcconfig in Resources */,
 				EC9945641B5BBEF70012D290 /* Components.plist in Resources */,
-				EC9945611B5BBD3F0012D290 /* Mac-StaticLibrary.xcconfig in Resources */,
-				EC9945561B5BBD3F0012D290 /* Application.xcconfig in Resources */,
-				EC99455F1B5BBD3F0012D290 /* Mac-DynamicLibrary.xcconfig in Resources */,
-				EC99455B1B5BBD3F0012D290 /* iOS-Framework.xcconfig in Resources */,
-				EC9945591B5BBD3F0012D290 /* iOS-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +518,9 @@
 				ECC307301B5BE9280020292D /* Errors.swift in Sources */,
 				EC9945621B5BBD3F0012D290 /* README.md in Sources */,
 				ECC3072F1B5BE9280020292D /* Version.swift in Sources */,
+				EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */,
 				EC9945081B5BB91A0012D290 /* main.swift in Sources */,
+				EC46826D1B5CBF3200C9CC12 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE45E0A1B5C6CF200965A70 /* Github.swift in Sources */,
 				ECC307321B5BEA520020292D /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

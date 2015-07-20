@@ -10,6 +10,8 @@ import Commandant
 
 let registry = CommandRegistry<CommandlineToolError>()
 registry.register(VersionCommand())
+registry.register(UserCommand())
+registry.register(RepositoryCommand())
 
 let helpCommand = HelpCommand(registry: registry)
 registry.register(helpCommand)

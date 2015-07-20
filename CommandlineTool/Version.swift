@@ -20,7 +20,6 @@ struct VersionCommand: CommandType {
         case .Arguments:
             let version = NSBundle(identifier: CommandlineToolKitBundleIdentifier)?.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String
             println(version!)
-
         default:
             break
         }
