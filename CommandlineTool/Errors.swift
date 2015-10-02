@@ -10,7 +10,7 @@ import Commandant
 import Box
 
 /// Possible errors within CommandlineTool.
-enum CommandlineToolError: Printable {
+enum CommandlineToolError: CustomStringConvertible {
     case InvalidArgument(description: String)
     case ConnectionFailed
     case TaskError(terminationStatus: Int32)
@@ -19,14 +19,14 @@ enum CommandlineToolError: Printable {
         switch self {
         case let .InvalidArgument(description):
             return description
-        case let .ConnectionFailed:
+        case .ConnectionFailed:
             return "Failed to connect to API."
-        case let .TaskError:
+        case .TaskError:
             return "A shell task exited unsuccessfully."
         }
     }
 }
 
 func toCommandantError(commandlineToolError: CommandlineToolError) -> CommandantError<CommandlineToolError> {
-    return .CommandError(Box(commandlineToolError))
+    return .CommandError(commandlineToolError)
 }

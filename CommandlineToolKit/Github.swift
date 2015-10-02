@@ -10,86 +10,87 @@ import Foundation
 import Result
 import APIKit
 
-public class Github: API {
-    override public class var baseURL: NSURL {
+public protocol GithubRequest: Request {
+    
+}
+
+public extension GithubRequest {
+    public var baseURL: NSURL {
         return NSURL(string: "https://api.github.com")!
     }
+}
+
+public enum Sort: String {
+    case Followers = "followers"
+    case Repositories = "repositories"
+    case Joined = "joined"
+}
+
+public enum Order: String {
+    case Ascending = "asc"
+    case Descending = "desc"
+}
+
+public struct SearchUsers: GithubRequest {
+    public typealias Response = [AnyObject]
     
-    public class Endpoint {
-        // https://developer.github.com/v3/search/#search-users
-        public class SearchUsers: APIKit.Request {
-            public enum Sort: String {
-                case Followers = "followers"
-                case Repositories = "repositories"
-                case Joined = "joined"
-            }
-            
-            public enum Order: String {
-                case Ascending = "asc"
-                case Descending = "desc"
-            }
-            
-            public typealias Response = [AnyObject]
-            
-            let query: String
-            let sort: Sort
-            let order: Order
-            
-            public var URLRequest: NSURLRequest? {
-                return Github.URLRequest(
-                    method: .GET,
-                    path: "/search/users",
-                    parameters: ["q": query, "sort": sort.rawValue, "order": order.rawValue]
-                )
-            }
-            
-            public init(query: String, sort: Sort = .Followers, order: Order = .Ascending) {
-                self.query = query
-                self.sort = sort
-                self.order = order
-            }
-            
-            public class func responseFromObject(object: AnyObject) -> Response? {
-                return object["items"] as? Response
-            }
-        }
-        
-        // https://developer.github.com/v3/search/#search-repositories
-        public class SearchRepositories: APIKit.Request {
-            public enum Sort: String {
-                case Followers = "followers"
-                case Repositories = "repositories"
-                case Joined = "joined"
-            }
-            
-            public enum Order: String {
-                case Ascending = "asc"
-                case Descending = "desc"
-            }
-            
-            public typealias Response = [AnyObject]
-            
-            let query: String
-            let sort: Sort
-            let order: Order
-            
-            public var URLRequest: NSURLRequest? {
-                return Github.URLRequest(
-                    method: .GET,
-                    path: "/search/repositories",
-                    parameters: ["q": query, "sort": sort.rawValue, "order": order.rawValue]
-                )
-            }
-            
-            public init(query: String, sort: Sort = .Followers, order: Order = .Ascending) {
-                self.query = query
-                self.sort = sort
-                self.order = order
-            }
-            
-            public class func responseFromObject(object: AnyObject) -> Response? {
-                return object["items"] as? Response
-            }
-        }
+    let query: String
+    let sort: Sort
+    let order: Order
+    
+    public var method: HTTPMethod {
+        return .GET
+    }
+    
+    public var path: String {
+        return "/search/users"
+    }
+    
+    public var parameters: [String: AnyObject] {
+        return ["q": query, "sort": sort.rawValue, "order": order.rawValue]
+    }
+    
+    public init(query: String, sort: Sort = .Followers, order: Order = .Ascending) {
+        self.query = query
+        self.sort = sort
+        self.order = order
+    }
+    
+    public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+        guard let dictionary = object as? [String: AnyObject] else { return nil }
+        guard let users = dictionary["items"] as? [AnyObject] else { return nil }
+        return users
+    }
+}
+
+public struct SerchRepositories: GithubRequest {
+    public typealias Response = [[String: AnyObject]]
+    
+    let query: String
+    let sort: Sort
+    let order: Order
+    
+    public var method: HTTPMethod {
+        return .GET
+    }
+    
+    public var path: String {
+        return "/search/repositories"
+    }
+    
+    public var parameters: [String: AnyObject] {
+        return ["q": query, "sort": sort.rawValue, "order": order.rawValue]
+    }
+    
+    public init(query: String, sort: Sort = .Followers, order: Order = .Ascending) {
+        self.query = query
+        self.sort = sort
+        self.order = order
+    }
+    
+    public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
+        guard let dictionary = object as? [String: AnyObject] else { return nil }
+        guard let repositories = dictionary["items"] as? [[String: AnyObject]] else { return nil }
+        return repositories
     }
 }

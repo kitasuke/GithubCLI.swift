@@ -19,10 +19,10 @@ struct VersionCommand: CommandType {
         switch mode {
         case .Arguments:
             let version = NSBundle(identifier: CommandlineToolKitBundleIdentifier)?.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String
-            println(version!)
+            print(version!)
         default:
             break
         }
-        return .success(())
+        return .Success(())
     }
 }

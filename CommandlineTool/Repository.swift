@@ -19,30 +19,31 @@ struct RepositoryCommand: CommandType {
     func run(mode: CommandMode) -> Result<(), CommandantError<ClientError>> {
         return RepositoryOptions.evaluate(mode).flatMap { options in
             let arguments = Process.arguments
-            if arguments.count < 4 {
-                return .failure(.UsageError(description: "Invalid arguments"))
-            }
+            guard arguments.count > 3 else { return .Failure(.UsageError(description: "Invalid arguments")) }
             
             let requiredArguments = [
                 "-name"
             ]
             for argument in requiredArguments {
-                if find(arguments, argument) == nil {
-                    return .failure(.UsageError(description: "\(argument) argument required"))
-                }
+                guard let _ = arguments.indexOf(argument) else { return .Failure(.UsageError(description: "\(argument) argument required")) }
             }
+            
+            let argument = arguments.split { $0 == "-name" }.last
+            guard let name = argument?.first else { return .Failure(.UsageError(description: "Invalid input name")) }
             
             let runLoop = CFRunLoopGetCurrent()
-            
-            let repositories = split(arguments, allowEmptySlices: true) { $0 == "-name" }.last
-            if let name = repositories?.first {
-                APIClient.sharedClient.searchRepository(name, completionHandler: { result in
-                    CFRunLoopStop(runLoop)
-                })
-            }
+            APIClient.sharedClient.searchRepositories(name, completionHandler: { result in
+                switch result {
+                case .Success(let repositories):
+                    print(repositories)
+                case .Failure(let error):
+                    print(error)
+                }
+                CFRunLoopStop(runLoop)
+            })
             CFRunLoopRun()
             
-            return .success()
+            return .Success()
         }
     }
 }
@@ -51,7 +52,7 @@ struct RepositoryOptions: OptionsType {
     let name: String
     
     static func create(name: String) -> RepositoryOptions {
-        return self(name: name)
+        return self.init(name: name)
     }
     
     static func evaluate(m: CommandMode) -> Result<RepositoryOptions, CommandantError<CommandlineToolError>> {
