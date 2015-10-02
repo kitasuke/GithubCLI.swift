@@ -1,5 +1,4 @@
-github "robrix/Box" "1.2.2"
+github "antitypical/Result" "932ac1aabf6d881ead74c4e6911d1271e95d2859"
 github "jspahrsummers/xcconfigs" "0.8.1"
-github "antitypical/Result" "0.4.4"
-github "ishkawa/APIKit" "0.8.2"
-github "Carthage/Commandant" "0.6"
+github "ishkawa/APIKit" "73c2656d14e7ec71deef4e1e76b09a31b3d22bd9"
+github "Carthage/Commandant" "40f503c33121431dc098adb7c44d9496e3a1de2f"
