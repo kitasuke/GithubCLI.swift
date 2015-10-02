@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CommandlineTool.xcodeproj">
+      location = "group:/Users/kitasuke/Cocoapods/CommandlineTool/GithubCLI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/Commandant/Commandant.xcodeproj">

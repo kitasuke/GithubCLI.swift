@@ -1,6 +1,6 @@
 //
 //  User.swift
-//  CommandlineTool
+//  GithubCLI
 //
 //  Created by Yusuke Kita on 7/20/15.
 //  Copyright (c) 2015 kitasuke. All rights reserved.
@@ -8,10 +8,10 @@
 
 import Commandant
 import Result
-import CommandlineToolKit
+import GithubCLIKit
 
 struct UserCommand: CommandType {
-    typealias ClientError = CommandlineToolError
+    typealias ClientError = GithubCLIError
     
     let verb = "user"
     let function = "Search Github users"
@@ -53,7 +53,7 @@ struct UserOptions: OptionsType {
         return self.init(name: name)
     }
     
-    static func evaluate(m: CommandMode) -> Result<UserOptions, CommandantError<CommandlineToolError>> {
+    static func evaluate(m: CommandMode) -> Result<UserOptions, CommandantError<GithubCLIError>> {
         return create
             <*> m <| Option(key: "username", defaultValue: "", usage: "user's name to search")
     }

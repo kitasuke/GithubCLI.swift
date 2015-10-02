@@ -1,17 +1,17 @@
 //
 //  Repository.swift
-//  CommandlineTool
+//  GithubCLI
 //
 //  Created by Yusuke Kita on 7/20/15.
 //  Copyright (c) 2015 kitasuke. All rights reserved.
 //
 
-import CommandlineToolKit
+import GithubCLIKit
 import Commandant
 import Result
 
 struct RepositoryCommand: CommandType {
-    typealias ClientError = CommandlineToolError
+    typealias ClientError = GithubCLIError
     
     let verb = "repository"
     let function = "Search repository on Github"
@@ -55,7 +55,7 @@ struct RepositoryOptions: OptionsType {
         return self.init(name: name)
     }
     
-    static func evaluate(m: CommandMode) -> Result<RepositoryOptions, CommandantError<CommandlineToolError>> {
+    static func evaluate(m: CommandMode) -> Result<RepositoryOptions, CommandantError<GithubCLIError>> {
         return create
             <*> m <| Option(key: "repository name", defaultValue: "", usage: "repository name to search")
     }

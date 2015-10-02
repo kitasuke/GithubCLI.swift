@@ -1,0 +1,63 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1708CC7AEAD3940B6ED8A219A2591E37F65244B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F607A624BDF2624F7609EF66C123E17132AFE18F" : 0,
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : 0,
+    "D23C0CEAADB77074FDA4459000068A7940EB7AD0" : 0,
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : 0,
+    "57C931977B7D2307CC013C2BD93F90CF7C676790" : 0,
+    "1708CC7AEAD3940B6ED8A219A2591E37F65244B6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0E09E1BF-8832-41A1-9841-47860FF9388F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F607A624BDF2624F7609EF66C123E17132AFE18F" : "CommandlineTool\/Carthage\/Checkouts\/APIKit\/",
+    "956D2B21DD155C49504BB67697A67F7C5351A353" : "CommandlineTool\/Carthage\/Checkouts\/Result\/",
+    "D23C0CEAADB77074FDA4459000068A7940EB7AD0" : "CommandlineTool\/Carthage\/Checkouts\/Commandant\/",
+    "E084C86B03F81D63323C9E7510697EA528A758C7" : "CommandlineTool\/Carthage\/Checkouts\/xcconfigs\/",
+    "57C931977B7D2307CC013C2BD93F90CF7C676790" : "CommandlineTool\/Carthage\/Checkouts\/Box\/",
+    "1708CC7AEAD3940B6ED8A219A2591E37F65244B6" : "CommandlineTool\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GithubCLI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GithubCLI.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:kitasuke\/CommandlineTool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1708CC7AEAD3940B6ED8A219A2591E37F65244B6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:robrix\/Box.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57C931977B7D2307CC013C2BD93F90CF7C676790"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "956D2B21DD155C49504BB67697A67F7C5351A353"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Carthage\/Commandant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D23C0CEAADB77074FDA4459000068A7940EB7AD0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jspahrsummers\/xcconfigs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E084C86B03F81D63323C9E7510697EA528A758C7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jspahrsummers\/xcconfigs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E084C86B03F81D63323C9E7510697EA528A758C7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ishkawa\/APIKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F607A624BDF2624F7609EF66C123E17132AFE18F"
+    }
+  ]
+}

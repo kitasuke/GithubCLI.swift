@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  CommandlineTool
+//  GithubCLI
 //
 //  Created by Yusuke Kita on 7/19/15.
 //  Copyright (c) 2015 kitasuke. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Commandant
 
-let registry = CommandRegistry<CommandlineToolError>()
+let registry = CommandRegistry<GithubCLIError>()
 registry.register(VersionCommand())
 registry.register(UserCommand())
 registry.register(RepositoryCommand())
