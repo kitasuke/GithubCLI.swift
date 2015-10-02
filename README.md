@@ -1,5 +1,5 @@
-# CommandlineTool
-Commandline application in Swift based on [SwiftCov](https://github.com/realm/SwiftCov)
+# GithubCLI
+Command line tool for Github in Swift
 
 ## Installation
 
@@ -9,8 +9,12 @@ Commandline application in Swift based on [SwiftCov](https://github.com/realm/Sw
 
 Search user on Github
 
-`CommandlineTool user -name foo`
+`github user -name foo`
 
 Search repository on Github
 
-`CommandlineTool repository -name bar`
+`github repository -name bar`
+
+## Reference
+[SwiftCov](https://github.com/realm/SwiftCov)  
+[Carthage](https://github.com/Carthage/Carthage)
