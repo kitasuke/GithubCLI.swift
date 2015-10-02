@@ -3,7 +3,7 @@
 	url = https://github.com/jspahrsummers/xcconfigs.git
 [submodule "Carthage/Checkouts/Commandant"]
 	path = Carthage/Checkouts/Commandant
-	url = git@github.com:Carthage/Commandant.git
+	url = https://github.com/Carthage/Commandant.git
 [submodule "Carthage/Checkouts/Box"]
 	path = Carthage/Checkouts/Box
 	url = git@github.com:robrix/Box.git

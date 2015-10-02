@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0640"
+   LastUpgradeVersion = "0700"
    version = "2.0">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC9944E61B5BB8CA0012D290"
-               BuildableName = "CommandlineTool.app"
-               BlueprintName = "CommandlineTool"
-               ReferencedContainer = "container:CommandlineTool.xcodeproj">
+               BuildableName = "GithubCLI.app"
+               BlueprintName = "GithubCLI"
+               ReferencedContainer = "container:GithubCLI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC9945171B5BB9570012D290"
-               BuildableName = "CommandlineToolKitTests.xctest"
-               BlueprintName = "CommandlineToolKitTests"
-               ReferencedContainer = "container:CommandlineTool.xcodeproj">
+               BuildableName = "GithubCLIKitTests.xctest"
+               BlueprintName = "GithubCLIKitTests"
+               ReferencedContainer = "container:GithubCLI.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC9944F61B5BB8CA0012D290"
-               BuildableName = "CommandlineToolTests.xctest"
-               BlueprintName = "CommandlineToolTests"
-               ReferencedContainer = "container:CommandlineTool.xcodeproj">
+               BuildableName = "GithubCLI.xctest"
+               BlueprintName = "GithubCLITests"
+               ReferencedContainer = "container:GithubCLI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC9944E61B5BB8CA0012D290"
-            BuildableName = "CommandlineTool.app"
-            BlueprintName = "CommandlineTool"
-            ReferencedContainer = "container:CommandlineTool.xcodeproj">
+            BuildableName = "GithubCLI.app"
+            BlueprintName = "GithubCLI"
+            ReferencedContainer = "container:GithubCLI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,9 +78,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC9944E61B5BB8CA0012D290"
-            BuildableName = "CommandlineTool.app"
-            BlueprintName = "CommandlineTool"
-            ReferencedContainer = "container:CommandlineTool.xcodeproj">
+            BuildableName = "GithubCLI.app"
+            BlueprintName = "GithubCLI"
+            ReferencedContainer = "container:GithubCLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC9944E61B5BB8CA0012D290"
-            BuildableName = "CommandlineTool.app"
-            BlueprintName = "CommandlineTool"
-            ReferencedContainer = "container:CommandlineTool.xcodeproj">
+            BuildableName = "GithubCLI.app"
+            BlueprintName = "GithubCLI"
+            ReferencedContainer = "container:GithubCLI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

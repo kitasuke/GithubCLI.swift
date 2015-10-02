@@ -11,11 +11,11 @@
 		EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC70DCC91B5CB04000BC0BF1 /* User.swift */; };
 		EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */; };
 		EC9945081B5BB91A0012D290 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945071B5BB91A0012D290 /* main.swift */; };
-		EC9945131B5BB9570012D290 /* CommandlineToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9945121B5BB9570012D290 /* CommandlineToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC9945191B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
+		EC9945131B5BB9570012D290 /* GithubCLIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9945121B5BB9570012D290 /* GithubCLIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC9945191B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; };
 		EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */; };
-		EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; };
-		EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC9945251B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; };
+		EC9945261B5BB9570012D290 /* GithubCLIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
 		EC9945641B5BBEF70012D290 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9945631B5BBEF70012D290 /* Components.plist */; };
 		EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EC9945261B5BB9570012D290 /* CommandlineToolKit.framework in Embed Frameworks */,
+				EC9945261B5BB9570012D290 /* GithubCLIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,16 +94,16 @@
 /* Begin PBXFileReference section */
 		EC46826C1B5CBF3200C9CC12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EC70DCC91B5CB04000BC0BF1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandlineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9944E71B5BB8CA0012D290 /* GithubCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9944F71B5BB8CA0012D290 /* GithubCLI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCLI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9944FC1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolTests.swift; sourceTree = "<group>"; };
 		EC9945071B5BB91A0012D290 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommandlineToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GithubCLIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9945111B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9945121B5BB9570012D290 /* CommandlineToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandlineToolKit.h; sourceTree = "<group>"; };
-		EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandlineToolKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9945121B5BB9570012D290 /* GithubCLIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubCLIKit.h; sourceTree = "<group>"; };
+		EC9945181B5BB9570012D290 /* GithubCLIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCLIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9945201B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolKitTests.swift; sourceTree = "<group>"; };
 		EC99453B1B5BBD3F0012D290 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945251B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */,
+				EC9945251B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945191B5BB9570012D290 /* CommandlineToolKit.framework in Frameworks */,
+				EC9945191B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				EC9945391B5BBD200012D290 /* Configuration */,
-				EC9944E91B5BB8CA0012D290 /* CommandlineTool */,
-				EC9944FA1B5BB8CA0012D290 /* CommandlineToolTests */,
-				EC99450F1B5BB9570012D290 /* CommandlineToolKit */,
-				EC99451E1B5BB9570012D290 /* CommandlineToolKitTests */,
+				EC9944E91B5BB8CA0012D290 /* GithubCLI */,
+				EC9944FA1B5BB8CA0012D290 /* GithubCLITests */,
+				EC99450F1B5BB9570012D290 /* GithubCLIKit */,
+				EC99451E1B5BB9570012D290 /* GithubCLIKitTests */,
 				EC9944E81B5BB8CA0012D290 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -188,15 +188,15 @@
 		EC9944E81B5BB8CA0012D290 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */,
-				EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */,
-				EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */,
-				EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */,
+				EC9944E71B5BB8CA0012D290 /* GithubCLI.app */,
+				EC9944F71B5BB8CA0012D290 /* GithubCLI.xctest */,
+				EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */,
+				EC9945181B5BB9570012D290 /* GithubCLIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC9944E91B5BB8CA0012D290 /* CommandlineTool */ = {
+		EC9944E91B5BB8CA0012D290 /* GithubCLI */ = {
 			isa = PBXGroup;
 			children = (
 				EC9945071B5BB91A0012D290 /* main.swift */,
@@ -206,7 +206,7 @@
 				ECC3072E1B5BE9280020292D /* Errors.swift */,
 				EC9944EA1B5BB8CA0012D290 /* Supporting Files */,
 			);
-			path = CommandlineTool;
+			path = GithubCLI;
 			sourceTree = "<group>";
 		};
 		EC9944EA1B5BB8CA0012D290 /* Supporting Files */ = {
@@ -218,13 +218,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC9944FA1B5BB8CA0012D290 /* CommandlineToolTests */ = {
+		EC9944FA1B5BB8CA0012D290 /* GithubCLITests */ = {
 			isa = PBXGroup;
 			children = (
 				EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */,
 				EC9944FB1B5BB8CA0012D290 /* Supporting Files */,
 			);
-			path = CommandlineToolTests;
+			path = GithubCLITests;
 			sourceTree = "<group>";
 		};
 		EC9944FB1B5BB8CA0012D290 /* Supporting Files */ = {
@@ -235,15 +235,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC99450F1B5BB9570012D290 /* CommandlineToolKit */ = {
+		EC99450F1B5BB9570012D290 /* GithubCLIKit */ = {
 			isa = PBXGroup;
 			children = (
-				EC9945121B5BB9570012D290 /* CommandlineToolKit.h */,
+				EC9945121B5BB9570012D290 /* GithubCLIKit.h */,
 				ECC307311B5BEA520020292D /* APIClient.swift */,
 				ECE45E091B5C6CF200965A70 /* Github.swift */,
 				EC9945101B5BB9570012D290 /* Supporting Files */,
 			);
-			path = CommandlineToolKit;
+			path = GithubCLIKit;
 			sourceTree = "<group>";
 		};
 		EC9945101B5BB9570012D290 /* Supporting Files */ = {
@@ -258,13 +258,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC99451E1B5BB9570012D290 /* CommandlineToolKitTests */ = {
+		EC99451E1B5BB9570012D290 /* GithubCLIKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */,
 				EC99451F1B5BB9570012D290 /* Supporting Files */,
 			);
-			path = CommandlineToolKitTests;
+			path = GithubCLIKitTests;
 			sourceTree = "<group>";
 		};
 		EC99451F1B5BB9570012D290 /* Supporting Files */ = {
@@ -350,16 +350,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945131B5BB9570012D290 /* CommandlineToolKit.h in Headers */,
+				EC9945131B5BB9570012D290 /* GithubCLIKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EC9944E61B5BB8CA0012D290 /* CommandlineTool */ = {
+		EC9944E61B5BB8CA0012D290 /* GithubCLI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineTool" */;
+			buildConfigurationList = EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "GithubCLI" */;
 			buildPhases = (
 				EC9944E31B5BB8CA0012D290 /* Sources */,
 				EC9944E41B5BB8CA0012D290 /* Frameworks */,
@@ -371,14 +371,14 @@
 			dependencies = (
 				EC9945241B5BB9570012D290 /* PBXTargetDependency */,
 			);
-			name = CommandlineTool;
+			name = GithubCLI;
 			productName = CommandlineTool;
-			productReference = EC9944E71B5BB8CA0012D290 /* CommandlineTool.app */;
+			productReference = EC9944E71B5BB8CA0012D290 /* GithubCLI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC9944F61B5BB8CA0012D290 /* CommandlineToolTests */ = {
+		EC9944F61B5BB8CA0012D290 /* GithubCLITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolTests" */;
+			buildConfigurationList = EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "GithubCLITests" */;
 			buildPhases = (
 				EC9944F31B5BB8CA0012D290 /* Sources */,
 				EC9944F41B5BB8CA0012D290 /* Frameworks */,
@@ -389,14 +389,14 @@
 			dependencies = (
 				EC9944F91B5BB8CA0012D290 /* PBXTargetDependency */,
 			);
-			name = CommandlineToolTests;
+			name = GithubCLITests;
 			productName = CommandlineToolTests;
-			productReference = EC9944F71B5BB8CA0012D290 /* CommandlineToolTests.xctest */;
+			productReference = EC9944F71B5BB8CA0012D290 /* GithubCLI.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC99450D1B5BB9570012D290 /* CommandlineToolKit */ = {
+		EC99450D1B5BB9570012D290 /* GithubCLIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKit" */;
+			buildConfigurationList = EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "GithubCLIKit" */;
 			buildPhases = (
 				EC9945091B5BB9570012D290 /* Sources */,
 				EC99450A1B5BB9570012D290 /* Frameworks */,
@@ -408,14 +408,14 @@
 			);
 			dependencies = (
 			);
-			name = CommandlineToolKit;
+			name = GithubCLIKit;
 			productName = CommandlineToolKit;
-			productReference = EC99450E1B5BB9570012D290 /* CommandlineToolKit.framework */;
+			productReference = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EC9945171B5BB9570012D290 /* CommandlineToolKitTests */ = {
+		EC9945171B5BB9570012D290 /* GithubCLIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKitTests" */;
+			buildConfigurationList = EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "GithubCLIKitTests" */;
 			buildPhases = (
 				EC9945141B5BB9570012D290 /* Sources */,
 				EC9945151B5BB9570012D290 /* Frameworks */,
@@ -427,9 +427,9 @@
 				EC99451B1B5BB9570012D290 /* PBXTargetDependency */,
 				EC99451D1B5BB9570012D290 /* PBXTargetDependency */,
 			);
-			name = CommandlineToolKitTests;
+			name = GithubCLIKitTests;
 			productName = CommandlineToolKitTests;
-			productReference = EC9945181B5BB9570012D290 /* CommandlineToolKitTests.xctest */;
+			productReference = EC9945181B5BB9570012D290 /* GithubCLIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -439,7 +439,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = kitasuke;
 				TargetAttributes = {
 					EC9944E61B5BB8CA0012D290 = {
@@ -458,7 +458,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "CommandlineTool" */;
+			buildConfigurationList = EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "GithubCLI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -471,10 +471,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC9944E61B5BB8CA0012D290 /* CommandlineTool */,
-				EC9944F61B5BB8CA0012D290 /* CommandlineToolTests */,
-				EC99450D1B5BB9570012D290 /* CommandlineToolKit */,
-				EC9945171B5BB9570012D290 /* CommandlineToolKitTests */,
+				EC9944E61B5BB8CA0012D290 /* GithubCLI */,
+				EC9944F61B5BB8CA0012D290 /* GithubCLITests */,
+				EC99450D1B5BB9570012D290 /* GithubCLIKit */,
+				EC9945171B5BB9570012D290 /* GithubCLIKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -555,22 +555,22 @@
 /* Begin PBXTargetDependency section */
 		EC9944F91B5BB8CA0012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC9944E61B5BB8CA0012D290 /* CommandlineTool */;
+			target = EC9944E61B5BB8CA0012D290 /* GithubCLI */;
 			targetProxy = EC9944F81B5BB8CA0012D290 /* PBXContainerItemProxy */;
 		};
 		EC99451B1B5BB9570012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC99450D1B5BB9570012D290 /* CommandlineToolKit */;
+			target = EC99450D1B5BB9570012D290 /* GithubCLIKit */;
 			targetProxy = EC99451A1B5BB9570012D290 /* PBXContainerItemProxy */;
 		};
 		EC99451D1B5BB9570012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC9944E61B5BB8CA0012D290 /* CommandlineTool */;
+			target = EC9944E61B5BB8CA0012D290 /* GithubCLI */;
 			targetProxy = EC99451C1B5BB9570012D290 /* PBXContainerItemProxy */;
 		};
 		EC9945241B5BB9570012D290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC99450D1B5BB9570012D290 /* CommandlineToolKit */;
+			target = EC99450D1B5BB9570012D290 /* GithubCLIKit */;
 			targetProxy = EC9945231B5BB9570012D290 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -598,6 +598,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -665,9 +666,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CommandlineTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/CommandlineToolKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/CommandlineToolKit.framework/Versions/Current/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = GithubCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/GithubCLIKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/GithubCLIKit.framework/Versions/Current/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GithubCLI;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -679,9 +681,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CommandlineTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/CommandlineToolKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/CommandlineToolKit.framework/Versions/Current/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = GithubCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/. /Library/Frameworks/GithubCLIKit.framework/Versions/Current/Frameworks /Library/Frameworks @executable_path/GithubCLIKit.framework/Versions/Current/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GithubCLI;
 			};
 			name = Release;
 		};
@@ -701,8 +704,8 @@
 				);
 				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+				PRODUCT_NAME = GithubCLI;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
 			};
 			name = Debug;
 		};
@@ -718,8 +721,8 @@
 				);
 				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+				PRODUCT_NAME = GithubCLI;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
 			};
 			name = Release;
 		};
@@ -738,17 +741,18 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-dfosftkeefphecfnrfzrdhozznsg/Build/Products/Debug",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolKit/Info.plist;
+				INFOPLIST_FILE = GithubCLIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusuke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -772,13 +776,14 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CommandlineTool-gijnaxsbsjkbnrermgxxnrhbelax/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-dfosftkeefphecfnrfzrdhozznsg/Build/Products/Debug",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = CommandlineToolKit/Info.plist;
+				INFOPLIST_FILE = GithubCLIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).$(WRAPPER_EXTENSION)/$(PRODUCT_NAME)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusuke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -802,7 +807,7 @@
 				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
 			};
 			name = Debug;
 		};
@@ -818,14 +823,14 @@
 				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommandlineTool.app/Contents/MacOS/CommandlineTool";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "CommandlineTool" */ = {
+		EC9944E21B5BB8CA0012D290 /* Build configuration list for PBXProject "GithubCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC9944FF1B5BB8CA0012D290 /* Debug */,
@@ -834,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineTool" */ = {
+		EC9945011B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "GithubCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC9945021B5BB8CA0012D290 /* Debug */,
@@ -843,7 +848,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolTests" */ = {
+		EC9945041B5BB8CA0012D290 /* Build configuration list for PBXNativeTarget "GithubCLITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC9945051B5BB8CA0012D290 /* Debug */,
@@ -852,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKit" */ = {
+		EC9945271B5BB9570012D290 /* Build configuration list for PBXNativeTarget "GithubCLIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC9945281B5BB9570012D290 /* Debug */,
@@ -861,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "CommandlineToolKitTests" */ = {
+		EC99452B1B5BB9570012D290 /* Build configuration list for PBXNativeTarget "GithubCLIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC99452C1B5BB9570012D290 /* Debug */,
