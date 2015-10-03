@@ -20,7 +20,7 @@ public let GithubCLIKitBundleIdentifier = NSBundle(forClass: APIClient.self).bun
 public class APIClient {
     static public let sharedClient = APIClient()
     
-    public func searchUsers(name: String, completionHandler: (Result<[AnyObject], APIClientError> -> Void)) {
+    public func searchUsers(name: String, completionHandler: (Result<[User], APIClientError> -> Void)) {
         let request = SearchUsers(query: name)
         API.sendRequest(request) { result in
             switch result {
@@ -32,7 +32,7 @@ public class APIClient {
         }
     }
     
-    public func searchRepositories(name: String, completionHandler: (Result<[AnyObject], APIClientError> -> Void)) {
+    public func searchRepositories(name: String, completionHandler: (Result<[Repository], APIClientError> -> Void)) {
         let request = SerchRepositories(query: name)
         API.sendRequest(request) { result in
             switch result {

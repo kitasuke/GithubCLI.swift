@@ -9,6 +9,7 @@
 import Foundation
 import Result
 import APIKit
+import Himotoki
 
 public protocol GithubRequest: Request {
     
@@ -32,7 +33,7 @@ public enum Order: String {
 }
 
 public struct SearchUsers: GithubRequest {
-    public typealias Response = [AnyObject]
+    public typealias Response = [User]
     
     let query: String
     let sort: Sort
@@ -59,12 +60,12 @@ public struct SearchUsers: GithubRequest {
     public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else { return nil }
         guard let users = dictionary["items"] as? [AnyObject] else { return nil }
-        return users
+        return users.map { try! decode($0) }
     }
 }
 
 public struct SerchRepositories: GithubRequest {
-    public typealias Response = [[String: AnyObject]]
+    public typealias Response = [Repository]
     
     let query: String
     let sort: Sort
@@ -91,6 +92,6 @@ public struct SerchRepositories: GithubRequest {
     public func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
         guard let dictionary = object as? [String: AnyObject] else { return nil }
         guard let repositories = dictionary["items"] as? [[String: AnyObject]] else { return nil }
-        return repositories
+        return repositories.map { try! decode($0) }
     }
 }

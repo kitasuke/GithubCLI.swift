@@ -5,6 +5,9 @@
       location = "group:GithubCLI.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/Himotoki/Himotoki.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/Commandant/Commandant.xcodeproj">
    </FileRef>
    <FileRef
