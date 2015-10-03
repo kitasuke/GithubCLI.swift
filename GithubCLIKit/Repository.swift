@@ -14,7 +14,7 @@ public struct Repository: Decodable {
     let name: String
     let fullName: String
     let description: String
-    let language: String
+    let language: String?
     let watchersCount: Int
     let stargazersCount: Int
     let forksCount: Int
@@ -29,7 +29,7 @@ public struct Repository: Decodable {
             e <| "name",
             e <| "full_name",
             e <| "description",
-            e <| "language",
+            e <|? "language",
             e <| "watchers_count",
             e <| "stargazers_count",
             e <| "forks_count",

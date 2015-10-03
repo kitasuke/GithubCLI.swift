@@ -34,8 +34,10 @@ struct UserCommand: CommandType {
             let runLoop = CFRunLoopGetCurrent()
             APIClient.sharedClient.searchUsers(name, completionHandler: { result in
                 switch result {
-                case .Success(let users): print(users)
-                case .Failure(let error): print(error)
+                case .Success(let users):
+                    print(users.forEach { print($0) } )
+                case .Failure(let error):
+                    print(error)
                 }
                 CFRunLoopStop(runLoop)
             })

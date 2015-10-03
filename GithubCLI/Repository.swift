@@ -35,7 +35,7 @@ struct RepositoryCommand: CommandType {
             APIClient.sharedClient.searchRepositories(name, completionHandler: { result in
                 switch result {
                 case .Success(let repositories):
-                    print(repositories)
+                    print(repositories.forEach { print($0) })
                 case .Failure(let error):
                     print(error)
                 }
