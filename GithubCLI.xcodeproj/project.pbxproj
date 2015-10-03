@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1276471BBFB2D200314FF9 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276441BBFB2D200314FF9 /* APIKit.framework */; };
+		EC1276481BBFB2D200314FF9 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276451BBFB2D200314FF9 /* Commandant.framework */; };
+		EC1276491BBFB2D200314FF9 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276461BBFB2D200314FF9 /* Result.framework */; };
+		EC12764D1BBFB30A00314FF9 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC12764C1BBFB30A00314FF9 /* Box.framework */; };
+		EC12764E1BBFB31500314FF9 /* Box.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC12764C1BBFB30A00314FF9 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC12764F1BBFB31500314FF9 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276441BBFB2D200314FF9 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC1276501BBFB31500314FF9 /* Commandant.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276451BBFB2D200314FF9 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC1276511BBFB31500314FF9 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276461BBFB2D200314FF9 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC46826D1B5CBF3200C9CC12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46826C1B5CBF3200C9CC12 /* Repository.swift */; };
 		EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC70DCC91B5CB04000BC0BF1 /* User.swift */; };
 		EC9944FE1B5BB8CA0012D290 /* GithubCLITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* GithubCLITests.swift */; };
@@ -18,14 +26,6 @@
 		EC9945261B5BB9570012D290 /* GithubCLIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
 		EC9945641B5BBEF70012D290 /* Components.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9945631B5BBEF70012D290 /* Components.plist */; };
-		EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC99456F1B5BC97D0012D290 /* Box.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456C1B5BC97D0012D290 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945701B5BC97D0012D290 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456D1B5BC97D0012D290 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC9945711B5BC9890012D290 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456B1B5BC97D0012D290 /* APIKit.framework */; };
-		EC9945721B5BC9890012D290 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456C1B5BC97D0012D290 /* Box.framework */; };
-		EC9945731B5BC9890012D290 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99456D1B5BC97D0012D290 /* Result.framework */; };
-		EC99457A1B5BCAC30012D290 /* Commandant.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945791B5BCAC30012D290 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC99457C1B5BCACF0012D290 /* Commandant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9945791B5BCAC30012D290 /* Commandant.framework */; };
 		ECC3072F1B5BE9280020292D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3072D1B5BE9280020292D /* Version.swift */; };
 		ECC307301B5BE9280020292D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3072E1B5BE9280020292D /* Errors.swift */; };
 		ECC307321B5BEA520020292D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC307311B5BEA520020292D /* APIClient.swift */; };
@@ -81,10 +81,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EC99456E1B5BC97D0012D290 /* APIKit.framework in Copy Frameworks */,
-				EC99456F1B5BC97D0012D290 /* Box.framework in Copy Frameworks */,
-				EC9945701B5BC97D0012D290 /* Result.framework in Copy Frameworks */,
-				EC99457A1B5BCAC30012D290 /* Commandant.framework in Copy Frameworks */,
+				EC12764E1BBFB31500314FF9 /* Box.framework in Copy Frameworks */,
+				EC12764F1BBFB31500314FF9 /* APIKit.framework in Copy Frameworks */,
+				EC1276501BBFB31500314FF9 /* Commandant.framework in Copy Frameworks */,
+				EC1276511BBFB31500314FF9 /* Result.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +92,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EC1276441BBFB2D200314FF9 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/Mac/APIKit.framework; sourceTree = "<group>"; };
+		EC1276451BBFB2D200314FF9 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
+		EC1276461BBFB2D200314FF9 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		EC12764C1BBFB30A00314FF9 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
 		EC46826C1B5CBF3200C9CC12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EC70DCC91B5CB04000BC0BF1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC9944E71B5BB8CA0012D290 /* GithubCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,10 +159,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC99457C1B5BCACF0012D290 /* Commandant.framework in Frameworks */,
-				EC9945711B5BC9890012D290 /* APIKit.framework in Frameworks */,
-				EC9945721B5BC9890012D290 /* Box.framework in Frameworks */,
-				EC9945731B5BC9890012D290 /* Result.framework in Frameworks */,
+				EC1276471BBFB2D200314FF9 /* APIKit.framework in Frameworks */,
+				EC1276481BBFB2D200314FF9 /* Commandant.framework in Frameworks */,
+				EC1276491BBFB2D200314FF9 /* Result.framework in Frameworks */,
+				EC12764D1BBFB30A00314FF9 /* Box.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +180,10 @@
 		EC9944DE1B5BB8CA0012D290 = {
 			isa = PBXGroup;
 			children = (
+				EC12764C1BBFB30A00314FF9 /* Box.framework */,
+				EC1276441BBFB2D200314FF9 /* APIKit.framework */,
+				EC1276451BBFB2D200314FF9 /* Commandant.framework */,
+				EC1276461BBFB2D200314FF9 /* Result.framework */,
 				EC9945391B5BBD200012D290 /* Configuration */,
 				EC9944E91B5BB8CA0012D290 /* GithubCLI */,
 				EC9944FA1B5BB8CA0012D290 /* GithubCLITests */,
@@ -702,7 +710,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
+				INFOPLIST_FILE = GithubCLITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = GithubCLI;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
@@ -719,7 +727,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolTests/Info.plist;
+				INFOPLIST_FILE = GithubCLITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = GithubCLI;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
@@ -741,7 +749,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-dfosftkeefphecfnrfzrdhozznsg/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-fbogwkupbsubysewbprpiwxjgkez/Build/Products/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -776,7 +785,8 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-dfosftkeefphecfnrfzrdhozznsg/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GithubCLI-fbogwkupbsubysewbprpiwxjgkez/Build/Products/Debug",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = GithubCLIKit/Info.plist;
@@ -804,7 +814,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
+				INFOPLIST_FILE = GithubCLIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
@@ -820,7 +830,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CommandlineToolKitTests/Info.plist;
+				INFOPLIST_FILE = GithubCLIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCLI.app/Contents/MacOS/GithubCLI";
