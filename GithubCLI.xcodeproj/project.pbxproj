@@ -15,6 +15,10 @@
 		EC12764F1BBFB31500314FF9 /* APIKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276441BBFB2D200314FF9 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC1276501BBFB31500314FF9 /* Commandant.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276451BBFB2D200314FF9 /* Commandant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC1276511BBFB31500314FF9 /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276461BBFB2D200314FF9 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC1276551BBFB59E00314FF9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1276541BBFB59E00314FF9 /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		EC1276571BBFB66400314FF9 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276561BBFB66400314FF9 /* Himotoki.framework */; };
+		EC1276581BBFB66C00314FF9 /* Himotoki.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = EC1276561BBFB66400314FF9 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC12765A1BBFB6EB00314FF9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1276591BBFB6EB00314FF9 /* Repository.swift */; settings = {ASSET_TAGS = (); }; };
 		EC46826D1B5CBF3200C9CC12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46826C1B5CBF3200C9CC12 /* Repository.swift */; };
 		EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC70DCC91B5CB04000BC0BF1 /* User.swift */; };
 		EC9944FE1B5BB8CA0012D290 /* GithubCLITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* GithubCLITests.swift */; };
@@ -81,6 +85,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EC1276581BBFB66C00314FF9 /* Himotoki.framework in Copy Frameworks */,
 				EC12764E1BBFB31500314FF9 /* Box.framework in Copy Frameworks */,
 				EC12764F1BBFB31500314FF9 /* APIKit.framework in Copy Frameworks */,
 				EC1276501BBFB31500314FF9 /* Commandant.framework in Copy Frameworks */,
@@ -96,6 +101,9 @@
 		EC1276451BBFB2D200314FF9 /* Commandant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Commandant.framework; path = Carthage/Build/Mac/Commandant.framework; sourceTree = "<group>"; };
 		EC1276461BBFB2D200314FF9 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		EC12764C1BBFB30A00314FF9 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
+		EC1276541BBFB59E00314FF9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC1276561BBFB66400314FF9 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/Mac/Himotoki.framework; sourceTree = "<group>"; };
+		EC1276591BBFB6EB00314FF9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EC46826C1B5CBF3200C9CC12 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EC70DCC91B5CB04000BC0BF1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC9944E71B5BB8CA0012D290 /* GithubCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +171,7 @@
 				EC1276481BBFB2D200314FF9 /* Commandant.framework in Frameworks */,
 				EC1276491BBFB2D200314FF9 /* Result.framework in Frameworks */,
 				EC12764D1BBFB30A00314FF9 /* Box.framework in Frameworks */,
+				EC1276571BBFB66400314FF9 /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 		EC9944DE1B5BB8CA0012D290 = {
 			isa = PBXGroup;
 			children = (
+				EC1276561BBFB66400314FF9 /* Himotoki.framework */,
 				EC12764C1BBFB30A00314FF9 /* Box.framework */,
 				EC1276441BBFB2D200314FF9 /* APIKit.framework */,
 				EC1276451BBFB2D200314FF9 /* Commandant.framework */,
@@ -249,6 +259,8 @@
 				EC9945121B5BB9570012D290 /* GithubCLIKit.h */,
 				ECC307311B5BEA520020292D /* APIClient.swift */,
 				ECE45E091B5C6CF200965A70 /* Github.swift */,
+				EC1276541BBFB59E00314FF9 /* User.swift */,
+				EC1276591BBFB6EB00314FF9 /* Repository.swift */,
 				EC9945101B5BB9570012D290 /* Supporting Files */,
 			);
 			path = GithubCLIKit;
@@ -547,6 +559,8 @@
 			files = (
 				ECE45E0A1B5C6CF200965A70 /* Github.swift in Sources */,
 				ECC307321B5BEA520020292D /* APIClient.swift in Sources */,
+				EC1276551BBFB59E00314FF9 /* User.swift in Sources */,
+				EC12765A1BBFB6EB00314FF9 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
