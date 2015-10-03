@@ -1,6 +1,6 @@
 //
-//  CommandlineToolKitTests.swift
-//  CommandlineToolKitTests
+//  GithubCLIKitTests.swift
+//  GithubCLIKitTests
 //
 //  Created by Yusuke Kita on 7/19/15.
 //  Copyright (c) 2015 kitasuke. All rights reserved.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class CommandlineToolKitTests: XCTestCase {
+class GithubCLIKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

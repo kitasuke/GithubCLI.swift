@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		EC46826D1B5CBF3200C9CC12 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46826C1B5CBF3200C9CC12 /* Repository.swift */; };
 		EC70DCCA1B5CB04000BC0BF1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC70DCC91B5CB04000BC0BF1 /* User.swift */; };
-		EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */; };
+		EC9944FE1B5BB8CA0012D290 /* GithubCLITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9944FD1B5BB8CA0012D290 /* GithubCLITests.swift */; };
 		EC9945081B5BB91A0012D290 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945071B5BB91A0012D290 /* main.swift */; };
 		EC9945131B5BB9570012D290 /* GithubCLIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9945121B5BB9570012D290 /* GithubCLIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC9945191B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; };
-		EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */; };
+		EC9945221B5BB9570012D290 /* GithubCLIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9945211B5BB9570012D290 /* GithubCLIKitTests.swift */; };
 		EC9945251B5BB9570012D290 /* GithubCLIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; };
 		EC9945261B5BB9570012D290 /* GithubCLIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC9945621B5BBD3F0012D290 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC9945501B5BBD3F0012D290 /* README.md */; };
@@ -98,14 +98,14 @@
 		EC9944EB1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9944F71B5BB8CA0012D290 /* GithubCLI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCLI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9944FC1B5BB8CA0012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolTests.swift; sourceTree = "<group>"; };
+		EC9944FD1B5BB8CA0012D290 /* GithubCLITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCLITests.swift; sourceTree = "<group>"; };
 		EC9945071B5BB91A0012D290 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EC99450E1B5BB9570012D290 /* GithubCLIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GithubCLIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9945111B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9945121B5BB9570012D290 /* GithubCLIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubCLIKit.h; sourceTree = "<group>"; };
 		EC9945181B5BB9570012D290 /* GithubCLIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubCLIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9945201B5BB9570012D290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandlineToolKitTests.swift; sourceTree = "<group>"; };
+		EC9945211B5BB9570012D290 /* GithubCLIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCLIKitTests.swift; sourceTree = "<group>"; };
 		EC99453B1B5BBD3F0012D290 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		EC99453D1B5BBD3F0012D290 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		EC99453E1B5BBD3F0012D290 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 		EC9944FA1B5BB8CA0012D290 /* GithubCLITests */ = {
 			isa = PBXGroup;
 			children = (
-				EC9944FD1B5BB8CA0012D290 /* CommandlineToolTests.swift */,
+				EC9944FD1B5BB8CA0012D290 /* GithubCLITests.swift */,
 				EC9944FB1B5BB8CA0012D290 /* Supporting Files */,
 			);
 			path = GithubCLITests;
@@ -261,7 +261,7 @@
 		EC99451E1B5BB9570012D290 /* GithubCLIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC9945211B5BB9570012D290 /* CommandlineToolKitTests.swift */,
+				EC9945211B5BB9570012D290 /* GithubCLIKitTests.swift */,
 				EC99451F1B5BB9570012D290 /* Supporting Files */,
 			);
 			path = GithubCLIKitTests;
@@ -529,7 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9944FE1B5BB8CA0012D290 /* CommandlineToolTests.swift in Sources */,
+				EC9944FE1B5BB8CA0012D290 /* GithubCLITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9945221B5BB9570012D290 /* CommandlineToolKitTests.swift in Sources */,
+				EC9945221B5BB9570012D290 /* GithubCLIKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
