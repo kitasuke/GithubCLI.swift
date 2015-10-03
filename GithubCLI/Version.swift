@@ -13,7 +13,7 @@ import let GithubCLIKit.GithubCLIKitBundleIdentifier
 struct VersionCommand: CommandType {
     typealias ClientError = GithubCLIError
     let verb = "version"
-    let function = "Display the current version of CommandlineTool"
+    let function = "Display the current version of GithubCLI"
 
     func run(mode: CommandMode) -> Result<(), CommandantError<GithubCLIError>> {
         switch mode {
