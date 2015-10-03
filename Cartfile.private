@@ -1,4 +1,4 @@
 github "Carthage/Commandant" "swift-2.0"
 github "jspahrsummers/xcconfigs" >= 0.8
 github "ishkawa/APIKit" "1.0.0-beta5"
-github "ikesho/Himotoki"
+github "ikesyo/Himotoki" ~> 1.0

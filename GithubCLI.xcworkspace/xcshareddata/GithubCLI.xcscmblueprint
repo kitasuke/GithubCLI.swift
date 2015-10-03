@@ -10,6 +10,7 @@
     "D23C0CEAADB77074FDA4459000068A7940EB7AD0+++F562FC9" : 0,
     "1708CC7AEAD3940B6ED8A219A2591E37F65244B6+++F6CFE5C" : 0,
     "57C931977B7D2307CC013C2BD93F90CF7C676790+++FA59626" : 0,
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413+++567F2F9" : 0,
     "57C931977B7D2307CC013C2BD93F90CF7C676790+++B211FEF" : 0,
     "E084C86B03F81D63323C9E7510697EA528A758C7+++042F8E2" : 0,
     "F607A624BDF2624F7609EF66C123E17132AFE18F+++FF44E4E" : 0,
@@ -27,6 +28,7 @@
     "D23C0CEAADB77074FDA4459000068A7940EB7AD0+++F562FC9" : "GithubCLI.swift\/Carthage\/Checkouts\/Commandant\/",
     "1708CC7AEAD3940B6ED8A219A2591E37F65244B6+++F6CFE5C" : "GithubCLI.swift\/",
     "57C931977B7D2307CC013C2BD93F90CF7C676790+++FA59626" : "CommandlineTool\/Carthage\/Checkouts\/Box\/",
+    "892A392662EFD968ECAC00BEDD3BE4AF0F19F413+++567F2F9" : "GithubCLI.swift\/Carthage\/Checkouts\/Himotoki\/",
     "57C931977B7D2307CC013C2BD93F90CF7C676790+++B211FEF" : "GithubCLI.swift\/Carthage\/Checkouts\/Box\/",
     "E084C86B03F81D63323C9E7510697EA528A758C7+++042F8E2" : "CommandlineTool\/Carthage\/Checkouts\/xcconfigs\/",
     "F607A624BDF2624F7609EF66C123E17132AFE18F+++FF44E4E" : "GithubCLI.swift\/Carthage\/Checkouts\/APIKit\/",
@@ -59,6 +61,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:robrix\/Box.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57C931977B7D2307CC013C2BD93F90CF7C676790+++FA59626"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ikesyo\/Himotoki.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "892A392662EFD968ECAC00BEDD3BE4AF0F19F413+++567F2F9"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/antitypical\/Result.git",
