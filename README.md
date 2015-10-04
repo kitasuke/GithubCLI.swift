@@ -7,11 +7,11 @@ Command line tool for Github in Swift inspired by [SwiftCov](https://github.com/
 
 ## Usage
 
-Search user on Github
+Search user
 
 `github user -name foo`
 
-Search repository on Github
+Search repository
 
 `github repository -name bar`
 
